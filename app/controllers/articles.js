@@ -23,7 +23,7 @@ exports.article = function(req, res, next, id) {
     }).catch(function(err){
         return next(err);
     });
-};
+};  
 
 /**
  * Create a article
@@ -71,6 +71,7 @@ exports.update = function(req, res) {
  * Delete an article
  */
 exports.destroy = function(req, res) {
+    console.log(req);
 
     // create a new variable to hold the article that was placed on the req object.
     var article = req.article;

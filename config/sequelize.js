@@ -27,7 +27,7 @@ var sequelize =  onHeroku ?
     new Sequelize(config.db.name, config.db.username, config.db.password, {
         host: config.db.host,
         port: config.db.port,
-        dialect: 'mysql',
+        dialect: 'postgres',
         storage: config.db.storage,
         logging: config.enableSequelizeLog === 'true' ? winston.verbose : false
     });
